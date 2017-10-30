@@ -8,14 +8,13 @@ Get info from a raspi about your homebrew setup.
 `Python`
 `Flask`
 
-Short Term goals:
+#### Short Term goals:
 - Temperature readout remotely
 - Alerts for critical temps (too high/too low)
 - Graph of temps
 
 
-Wishlist/longterm:
-
+#### Wishlist/longterm:
 - Remote temperature control
 - Specific gravity readings
 - Automated regulation
