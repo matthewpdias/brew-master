@@ -4,10 +4,9 @@ Get info from a raspi about your homebrew setup.
 
 #### featuring: 
 
-Raspberry pi 
-Python
-Flask
-
+`Raspberry pi`
+`Python`
+`Flask`
 
 Short Term goals:
 - Temperature readout remotely
