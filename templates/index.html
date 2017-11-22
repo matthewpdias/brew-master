@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+
+<head>
+	<meta http-equiv="refresh" content="10"/>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+	<title>Brew Master</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  	<div class="container-fluid">
+     <a class="navbar-brand" href="#"><i class="fa fa-beer"></i> Brew Master</a>
+    </div>
+	</nav>
+	<div style="padding-bottom: 70px;"></div>
+		<canvas id="myChart" width="600" height="400"></canvas>
+		<script>
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var myChart = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		    		//x-axis data
+		        labels: [{% for val in temps %}
+		            				"{{ val.timestamp }}",
+		            			{% endfor %}],
+		        datasets: [{
+		        		//legend label
+		            label: 'Temperature',
+		            //y-axis data
+		            data: [{% for val in temps %}
+		            				"{{ val.temp }}",
+		            			{% endfor %}],
+		            //fill color
+		            backgroundColor: [
+		                'rgba(255, 99, 132, 0.2)',
+		            ],
+		            //line color
+		            borderColor: [
+		                'rgba(255,99,132,1)',
+		            ],
+		            //line width
+		            borderWidth: 2
+		        }]
+		    },
+		    options: {
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero:true
+		                }
+		            }]
+		        }
+		    }
+		});
+	</script>
+	</div>
+</body>
