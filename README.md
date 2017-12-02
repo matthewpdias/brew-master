@@ -31,7 +31,7 @@ Simply set minimum temperature, maximum temperature, notification and refresh ra
 ### Installation:
 _ I suggest using a [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage your pip packages. To get started with virtualenv you can simply `pip3 install virtualenv` then create a virtualenv in your current direcetory with `python3 -m virtualenv venv`. Activation is as easy as `source venv/bin/activate`! _
 
-0. Setup sendmail linux! There is a great tutorial [here]()
+0. Setup sendmail linux! There is a great tutorial [here](https://www.cyberciti.biz/tips/linux-use-gmail-as-a-smarthost.html)
 
 1. Clone this repo  
 `git clone https://github.com/matthewpdias/brew-master.git`
@@ -44,7 +44,7 @@ _ I suggest using a [virtualenv](https://virtualenv.pypa.io/en/stable/) to manag
 `export MIN_TEMPERATURE=55`  
 `export MAX_TEMPERATURE=72`
 
-  You will also need to change the name of the temperature sensing device in log_temp.py to match your device's serial number (mine was 28-0516a4123aff)
+  You will also need to change the name of the temperature sensing device in log_temp.py to match your device's serial number (mine was 28-0516a4123aff) and any relevant file paths for your system unless they exactly match mine (I tried to use a vanilla raspbian install to make this easy).
 
 4. Start the server  
 `bash run.sh`
