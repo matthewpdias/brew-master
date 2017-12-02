@@ -29,7 +29,7 @@ Simply set minimum temperature, maximum temperature, notification and refresh ra
 - Automated regulation
 
 ### Installation:
-_ I suggest using a [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage your pip packages. To get started with virtualenv you can simply `pip3 install virtualenv` then create a virtualenv in your current direcetory with `python3 -m virtualenv venv`. Activation is as easy as `source venv/bin/activate`! _
+_I suggest using a [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage your pip packages. To get started with virtualenv you can simply `pip3 install virtualenv` then create a virtualenv in your current direcetory with `python3 -m virtualenv venv`. Activation is as easy as `source venv/bin/activate`!_
 
 0. Setup sendmail linux! There is a great tutorial [here](https://www.cyberciti.biz/tips/linux-use-gmail-as-a-smarthost.html)
 
