@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<meta http-equiv="refresh" content="5"/>
+	<meta http-equiv="refresh" content="{{interval}}"/>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -36,11 +36,29 @@
 		            			{% endfor %}],
 		            //fill color
 		            backgroundColor: [
-		                'rgba(255, 99, 132, 0.2)',
+		                'rgba(255, 204, 51, .70)',
 		            ],
+                //size of bubbles
+                pointRadius: [
+                    6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
+                ],
+                //color of bubbles
+                pointBackgroundColor: [
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                  'rgba(255, 255, 255, 1)',
+                ],
 		            //line color
 		            borderColor: [
-		                'rgba(255,99,132,1)',
+		                'rgba(0, 0, 0, .88)',
 		            ],
 		            //line width
 		            borderWidth: 2
