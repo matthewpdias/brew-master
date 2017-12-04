@@ -29,9 +29,15 @@ Simply set minimum temperature, maximum temperature, notification and refresh ra
 - Automated regulation
 
 ### Installation:
+<<<<<<< HEAD
 _ I suggest using a [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage your pip packages. To get started with virtualenv you can simply `pip3 install virtualenv` then create a virtualenv in your current direcetory with `python3 -m virtualenv venv`. Activation is as easy as `source venv/bin/activate`! _
 
 0. Setup sendmail linux, there is a great tutorial [here](http://www.sbprojects.com/projects/raspberrypi/exim4.php). The important thing is the `mail` command works correctly, because that's how notifications are handled.
+=======
+_I suggest using a [virtualenv](https://virtualenv.pypa.io/en/stable/) to manage your pip packages. To get started with virtualenv you can simply `pip3 install virtualenv` then create a virtualenv in your current direcetory with `python3 -m virtualenv venv`. Activation is as easy as `source venv/bin/activate`!_
+
+0. Setup sendmail linux! There is a great tutorial [here](https://www.cyberciti.biz/tips/linux-use-gmail-as-a-smarthost.html)
+>>>>>>> 8021ef83ea3dd5b378aa460b0896ff0f7840ed64
 
 1. Clone this repo  
 `git clone https://github.com/matthewpdias/brew-master.git`
