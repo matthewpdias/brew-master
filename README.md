@@ -2,6 +2,8 @@
 
 Get info from a raspi about your homebrew setup.
 
+![screenshot of monitor](/screenshot.png)
+
 #### featuring:
 
 `Raspberry pi`
